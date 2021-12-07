@@ -10,7 +10,7 @@ def md5(string):
     host = '127.0.0.1'
     port = '5000'
     m = requests.get(f'http://{host}:{port}/md5/{string}')
-    return jsonify(['output']) 
+    return jsonify(['m']) 
 
 #group6cli md5 'test' 
 
@@ -25,7 +25,7 @@ def fibonacci(integer):
     host = '127.0.0.1'
     port = '5000'
     m = requests.get(f'http://{host}:{port}/fibonacci/{integer}')
-    return jsonify(['output'])
+    return jsonify(['m'])
 
 #this could return a fibonacci number 
 
@@ -40,7 +40,7 @@ def isprime(integer):
     host = '127.0.0.1'
     port = '5000'
     m = requests.get(f'http://{host}:{port}/isprime/{integer}')
-    return jsonify (['output'])
+    return jsonify (['m'])
 
 #this could return a prime number or not 
 
@@ -55,7 +55,7 @@ def factorial(integer):
     host = '127.0.0.1'
     port = '5000'
     m = requests.get(f'http://{host}:{port}/factorial/{integer}')
-    return jsonify(['output'])
+    return jsonify(['m'])
 
 #this could return a factorial integer 
 
